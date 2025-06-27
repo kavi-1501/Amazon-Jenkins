@@ -19,6 +19,8 @@ pipeline {
        stage ('validate') {
            steps {
                sh 'mvn validate'
+           }
+       }
         stage('build') {
             steps {
                  sh 'mvn clean install'
